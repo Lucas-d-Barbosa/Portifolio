@@ -70,7 +70,7 @@
 
 @media (max-width: 1000px) {
   .hero {
-    height: calc(130vh - 15rem);
+    height: calc(125vh - 15rem);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

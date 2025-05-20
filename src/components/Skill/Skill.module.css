@@ -1,0 +1,28 @@
+.skill {
+  width: 21rem;
+  min-width: 21rem;
+  height: 21rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.35s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill svg {
+  height: 10rem;
+  width: 100%;
+}
+
+.skill span {
+  font-size: clamp(1rem, 1.8vh + 1.2vw, 2.8rem);
+  font-weight: 700;
+}

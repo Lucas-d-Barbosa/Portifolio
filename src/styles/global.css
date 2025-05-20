@@ -23,3 +23,11 @@ body {
   gap: 1rem;
   color: var(--text-color);
 }
+
+.temporiaria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 1rem;
+}
