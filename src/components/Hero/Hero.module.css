@@ -70,9 +70,10 @@
 
 @media (max-width: 1000px) {
   .hero {
-    height: calc(100vh - 15rem);
+    height: calc(130vh - 15rem);
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     padding: 2rem;
     gap: 2rem;
   }
