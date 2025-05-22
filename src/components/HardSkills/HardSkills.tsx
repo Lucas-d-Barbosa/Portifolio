@@ -50,7 +50,7 @@ export default function HardSkills() {
       <Skill nome="Spring Boot">
         <BiLogoSpringBoot />
       </Skill>
-      <Skill nome="Spring Boot">
+      <Skill nome="MySQL">
         <SiMysql />
       </Skill>
     </Section>
