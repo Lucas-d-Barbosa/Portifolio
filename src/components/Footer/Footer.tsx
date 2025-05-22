@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo.png";
 import { FaLinkedin } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className={styles.footer} aria-label="Rodapé do site">
       <div className={styles.areaLogo}>

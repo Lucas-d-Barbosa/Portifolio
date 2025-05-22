@@ -9,7 +9,7 @@ interface InfoBlockProps {
   children: React.ReactNode;
 }
 
-export function InfoBlock({
+export default function InfoBlock({
   titulo,
   cargo,
   periodo,

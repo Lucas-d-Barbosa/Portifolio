@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css";
 import curriculo from "../../assets/documents/Currículo-portifolio.pdf";
 import profileImg from "../../assets/images/perfil.png";
-export function Hero() {
+export default function Hero() {
   return (
     <main className={styles.hero} id="main" aria-label="Área inicial">
       <div className={styles.left}>

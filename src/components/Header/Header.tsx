@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo.png";
 import styles from "./Header.module.css";
 import { useState } from "react";
 
-export function Header() {
+export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleClickMenu() {

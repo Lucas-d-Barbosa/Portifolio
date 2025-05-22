@@ -6,7 +6,12 @@ interface SectionProps {
   children: React.ReactNode;
   id?: string;
 }
-export function Section({ children, title, subtitle, id }: SectionProps) {
+export default function Section({
+  children,
+  title,
+  subtitle,
+  id,
+}: SectionProps) {
   return (
     <section className={styles.section} id={id}>
       <div className={styles.sectionTitle}>

@@ -3,7 +3,7 @@ interface SkillProps {
   nome: string;
   children?: React.ReactNode;
 }
-export function Skill({ nome, children }: SkillProps) {
+export default function Skill({ nome, children }: SkillProps) {
   return (
     <div className={styles.skill}>
       <div className={styles.icon}>{children}</div>
