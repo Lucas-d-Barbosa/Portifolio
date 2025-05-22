@@ -1,6 +1,7 @@
 :root {
   /* ===== Cores base ===== */
   --color-bg: #0d0b1e;
+  --color-footer-bg: #0a0816; /* escuro, mais fechado que o bg principal */
   --color-surface: #1a162d;
   --color-primary: #7c3aed; /* Roxo principal */
   --color-primary-dark: #5b21b6;

@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--color-footer-bg);
+}
+
+.footer h2 {
+  font-size: clamp(1rem, 2vh + 1vw, 3rem);
+  text-align: center;
+}
+
+.areaLogo {
+  height: 15rem;
+}
+
+.areaLogo img {
+  height: 100%;
+}

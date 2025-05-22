@@ -46,6 +46,7 @@ import {
 import { MdOutlineLightbulb } from "react-icons/md";
 import { RiShieldCheckLine } from "react-icons/ri";
 import { InfoBlock } from "./components/InfoBlock/InfoBlock";
+import { Footer } from "./components/Footer/Footer";
 function App() {
   return (
     <div className="container">
@@ -219,6 +220,7 @@ function App() {
           </li>
         </InfoBlock>
       </Section>
+      <Footer></Footer>
     </div>
   );
 }
