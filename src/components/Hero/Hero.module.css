@@ -101,3 +101,9 @@
     width: 60%;
   }
 }
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    margin-bottom: 45rem;
+  }
+}
