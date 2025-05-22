@@ -13,6 +13,7 @@ export function Header() {
   return (
     <header
       className={`${styles.header} ${menuOpen ? styles.activeHeader : ""}`}
+      aria-label="Cabeçalho do site"
     >
       <div className={styles.containerTop}>
         <div className={styles.logo}>
@@ -35,20 +36,33 @@ export function Header() {
       <nav className={menuOpen ? styles.showNav : ""}>
         <ul>
           <li>
-            <a href="#main">Início</a>
+            <a href="#main" aria-label="Link para o início">
+              Início
+            </a>
           </li>
 
           <li>
-            <a href="#soft-skills">Soft Skills</a>
+            <a href="#soft-skills" aria-label="Link para as soft skills">
+              Soft Skills
+            </a>
           </li>
           <li>
-            <a href="#hard-skills">Hard Skills</a>
+            <a href="#hard-skills" aria-label="Link para as hard skills">
+              Hard Skills
+            </a>
           </li>
           <li>
-            <a href="#formacao">Formação Academica</a>
+            <a href="#formacao" aria-label="Link para a formação acadêmica">
+              Formação Acadêmica
+            </a>
           </li>
           <li>
-            <a href="#experiencia">Experiência Profissional</a>
+            <a
+              href="#experiencia"
+              aria-label="Link para a experiência profissional"
+            >
+              Experiência Profissional
+            </a>
           </li>
         </ul>
       </nav>
