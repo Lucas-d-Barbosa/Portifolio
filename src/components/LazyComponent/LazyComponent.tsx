@@ -1,22 +1,36 @@
-// components/LazyComponent.jsx
-import { useEffect, useRef, useState, Suspense } from "react";
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  Suspense,
+  type ComponentType,
+  type ReactNode,
+} from "react";
 
-const LazyComponent = ({ loader, fallback = <div>Carregando...</div> }) => {
-  const ref = useRef();
+interface LazyComponentProps {
+  loader: () => Promise<{ default: ComponentType<unknown> }>;
+  fallback?: ReactNode;
+}
+
+const LazyComponent: React.FC<LazyComponentProps> = ({
+  loader,
+  fallback = <div>Carregando...</div>,
+}) => {
+  const ref = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [Component, setComponent] = useState(null);
+  const [Component, setComponent] = useState<ComponentType<unknown> | null>(
+    null
+  );
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setIsVisible(true);
-        observer.disconnect(); // só observa uma vez
+        observer.disconnect();
       }
     });
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    if (ref.current) observer.observe(ref.current);
 
     return () => observer.disconnect();
   }, []);
