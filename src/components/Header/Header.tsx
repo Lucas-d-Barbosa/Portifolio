@@ -35,20 +35,20 @@ export function Header() {
       <nav className={menuOpen ? styles.showNav : ""}>
         <ul>
           <li>
-            <a href="#">Início</a>
+            <a href="#main">Início</a>
           </li>
 
           <li>
-            <a href="#">Soft Skills</a>
+            <a href="#soft-skills">Soft Skills</a>
           </li>
           <li>
-            <a href="#">Hard Skills</a>
+            <a href="#hard-skills">Hard Skills</a>
           </li>
           <li>
-            <a href="#">Formação Academica</a>
+            <a href="#formacao">Formação Academica</a>
           </li>
           <li>
-            <a href="#">Experiência Profissional</a>
+            <a href="#experiencia">Experiência Profissional</a>
           </li>
         </ul>
       </nav>

@@ -10,7 +10,6 @@ import {
   FaComments,
   FaDatabase,
   FaDesktop,
-  FaLaptopMedical,
   FaLightbulb,
   FaProjectDiagram,
   FaReact,
@@ -52,7 +51,7 @@ function App() {
     <div className="container">
       <Header></Header>
       <Hero></Hero>
-      <Section title="Soft Skills">
+      <Section title="Soft Skills" id="soft-skills">
         <Skill nome="Comunicação">
           <FaComments />
         </Skill>
@@ -90,7 +89,7 @@ function App() {
           <GiLaurelsTrophy />
         </Skill>
       </Section>
-      <Section title="Hard Skills">
+      <Section title="Hard Skills" id="hard-skills">
         <Skill nome="HTML">
           <FaHtml5 />
         </Skill>
@@ -128,38 +127,7 @@ function App() {
           <SiMysql />
         </Skill>
       </Section>
-      <Section
-        title="Experiência"
-        // subtitle="Experiências que impulsionaram minha evolução como dev"
-      >
-        <InfoBlock
-          titulo="NexTi"
-          cargo="Desenvolvedor voluntário"
-          periodo="6 meses"
-          iconBg={FaBriefcase}
-        >
-          <li>
-            <FaLaptopCode style={{ marginRight: "0.5rem" }} />
-            Desenvolvimento de aplicações web internas com foco em melhoria de
-            processos acadêmicos.
-          </li>
-          <li>
-            <FaUsers style={{ marginRight: "0.5rem" }} />
-            Colaboração com equipe multidisciplinar utilizando metodologias
-            ágeis (Scrum).
-          </li>
-          <li>
-            <FaTools style={{ marginRight: "0.5rem" }} />
-            Tecnologias usadas: HTML, CSS, Bootstrap 5, JavaScript, PHP, MySQL.
-          </li>
-          <li>
-            <FaLightbulb style={{ marginRight: "0.5rem" }} />
-            Aprendizados: Experiência prática com demandas reais, trabalho em
-            equipe e comunicação com stakeholders não técnicos.
-          </li>
-        </InfoBlock>
-      </Section>
-      <Section title="Formação Acadêmica">
+      <Section title="Formação Acadêmica" id="formacao">
         <InfoBlock
           titulo="Centro Universitário Paraíso"
           cargo="Bacharelado em Sistemas de Informação"
@@ -193,7 +161,7 @@ function App() {
           titulo="E.E.E.P Irmã Ana Zélia da Fonseca"
           cargo="Técnico em Informática"
           periodo="Jan 2018 – Jan 2021"
-          iconBg={FaLaptopMedical} // Pode trocar o ícone se preferir
+          iconBg={FaLaptopCode} // Pode trocar o ícone se preferir
         >
           <li>
             <FaDesktop style={{ marginRight: "0.5rem" }} />
@@ -217,6 +185,34 @@ function App() {
             <FaUsers style={{ marginRight: "0.5rem" }} />
             Trabalho em equipe e práticas profissionais durante a formação
             técnica.
+          </li>
+        </InfoBlock>
+      </Section>
+      <Section title="Experiência" id="experiencia">
+        <InfoBlock
+          titulo="NexTi"
+          cargo="Desenvolvedor voluntário"
+          periodo="6 meses"
+          iconBg={FaBriefcase}
+        >
+          <li>
+            <FaLaptopCode style={{ marginRight: "0.5rem" }} />
+            Desenvolvimento de aplicações web internas com foco em melhoria de
+            processos acadêmicos.
+          </li>
+          <li>
+            <FaUsers style={{ marginRight: "0.5rem" }} />
+            Colaboração com equipe multidisciplinar utilizando metodologias
+            ágeis (Scrum).
+          </li>
+          <li>
+            <FaTools style={{ marginRight: "0.5rem" }} />
+            Tecnologias usadas: HTML, CSS, Bootstrap 5, JavaScript, PHP, MySQL.
+          </li>
+          <li>
+            <FaLightbulb style={{ marginRight: "0.5rem" }} />
+            Aprendizados: Experiência prática com demandas reais, trabalho em
+            equipe e comunicação com stakeholders não técnicos.
           </li>
         </InfoBlock>
       </Section>

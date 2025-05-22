@@ -1,8 +1,9 @@
 import styles from "./Hero.module.css";
+import curriculo from "../../assets/documents/Currículo-portifolio.pdf";
 import profileImg from "../../assets/images/perfil.png";
 export function Hero() {
   return (
-    <main className={styles.hero}>
+    <main className={styles.hero} id="main">
       <div className={styles.left}>
         <h1>Francisco Lucas Barbosa</h1>
         <h2>Desenvolvedor Full-stack</h2>
@@ -16,8 +17,12 @@ export function Hero() {
           completas do front-end ao back-end.
         </p>
         <div className={styles.buttons}>
-          <button>Contato</button>
-          <button>Download CV</button>
+          <a href="mailto:flucas.dev@gmail.com">
+            <button>Contato</button>
+          </a>
+          <a href={curriculo} download>
+            <button>Download CV</button>
+          </a>
         </div>
       </div>
       <div className={styles.right}>

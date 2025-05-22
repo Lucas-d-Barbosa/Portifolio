@@ -4,10 +4,11 @@ interface SectionProps {
   title?: string;
   subtitle?: string;
   children: React.ReactNode;
+  id?: string;
 }
-export function Section({ children, title, subtitle }: SectionProps) {
+export function Section({ children, title, subtitle, id }: SectionProps) {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id={id}>
       <div className={styles.sectionTitle}>
         <h2>{title}</h2>
         <h3>{subtitle}</h3>
