@@ -9,8 +9,8 @@
   gap: 1rem;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 50%;
   transition: transform 0.35s ease-in-out;
+  text-align: center;
 }
 
 .skill:hover {

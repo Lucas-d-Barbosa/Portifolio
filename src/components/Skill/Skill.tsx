@@ -4,7 +4,6 @@ interface SkillProps {
   children?: React.ReactNode;
 }
 export function Skill({ nome, children }: SkillProps) {
-  console.log(nome, children);
   return (
     <div className={styles.skill}>
       <div className={styles.icon}>{children}</div>
