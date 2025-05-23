@@ -10,6 +10,9 @@ export default function Header() {
     setMenuOpen(!menuOpen);
   }
 
+  function handleClickLink() {
+    setMenuOpen(!menuOpen);
+  }
   return (
     <header
       className={`${styles.header} ${menuOpen ? styles.activeHeader : ""}`}
@@ -36,23 +39,39 @@ export default function Header() {
       <nav className={menuOpen ? styles.showNav : ""}>
         <ul>
           <li>
-            <a href="#main" aria-label="Link para o início">
+            <a
+              href="#main"
+              aria-label="Link para o início"
+              onClick={handleClickLink}
+            >
               Início
             </a>
           </li>
 
           <li>
-            <a href="#soft-skills" aria-label="Link para as soft skills">
+            <a
+              href="#soft-skills"
+              aria-label="Link para as soft skills"
+              onClick={handleClickLink}
+            >
               Soft Skills
             </a>
           </li>
           <li>
-            <a href="#hard-skills" aria-label="Link para as hard skills">
+            <a
+              href="#hard-skills"
+              aria-label="Link para as hard skills"
+              onClick={handleClickLink}
+            >
               Hard Skills
             </a>
           </li>
           <li>
-            <a href="#formacao" aria-label="Link para a formação acadêmica">
+            <a
+              href="#formacao"
+              aria-label="Link para a formação acadêmica"
+              onClick={handleClickLink}
+            >
               Formação Acadêmica
             </a>
           </li>
@@ -60,6 +79,7 @@ export default function Header() {
             <a
               href="#experiencia"
               aria-label="Link para a experiência profissional"
+              onClick={handleClickLink}
             >
               Experiência Profissional
             </a>
