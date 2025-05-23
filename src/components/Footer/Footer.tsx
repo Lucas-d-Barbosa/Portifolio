@@ -2,7 +2,7 @@ import styles from "./Footer.module.css";
 import logo from "../../assets/images/logo-light.png";
 import { FaLinkedin } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
-
+import { FaGithub } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className={styles.footer} aria-label="Rodapé do site">
@@ -26,6 +26,11 @@ export default function Footer() {
         <a href="mailto:flucas.dev@gmail.com" target="_blank">
           <button aria-label="Botão para entrar em contato por email">
             <BiLogoGmail />
+          </button>
+        </a>
+        <a href="https://github.com/Lucas-d-Barbosa" target="_blank">
+          <button aria-label="Botão para verificar o github">
+            <FaGithub />
           </button>
         </a>
       </div>
