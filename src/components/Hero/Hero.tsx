@@ -24,9 +24,7 @@ export default function Hero() {
           </a>
           <a href={curriculo} download target="_blank">
             {" "}
-            <button aria-label="Botão para baixar currículo">
-              Download CV
-            </button>
+            <button aria-label="Botão para baixar currículo">Currículo</button>
           </a>
         </div>
       </div>
