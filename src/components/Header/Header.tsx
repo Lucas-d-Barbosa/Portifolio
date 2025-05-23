@@ -1,5 +1,5 @@
 import { MenuIcon, XIcon } from "lucide-react";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo-light.png";
 import styles from "./Header.module.css";
 import { useState } from "react";
 

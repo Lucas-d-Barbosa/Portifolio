@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo-light.png";
 import { FaLinkedin } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 
