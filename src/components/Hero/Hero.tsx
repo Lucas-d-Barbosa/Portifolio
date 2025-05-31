@@ -18,13 +18,21 @@ export default function Hero() {
         </p>
         <div className={styles.buttons}>
           <a href="mailto:flucas.dev@gmail.com" target="_blank">
-            <button aria-label="Botão para entrar em contato por email">
+            <button
+              aria-label="Botão para entrar em contato por email"
+              title="Botão para entrar em contato por email"
+            >
               Contato
             </button>
           </a>
           <a href={curriculo} download target="_blank">
             {" "}
-            <button aria-label="Botão para baixar currículo">Currículo</button>
+            <button
+              aria-label="Botão para baixar currículo"
+              title="Botão para baixar currículo"
+            >
+              Currículo
+            </button>
           </a>
         </div>
       </div>

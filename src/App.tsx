@@ -30,6 +30,10 @@ function App() {
         }
         fallback={<div></div>}
       />
+      <LazyComponent
+        loader={() => import("./components/Projects/Projects")}
+        fallback={<div></div>}
+      />
       <Footer></Footer>
     </div>
   );

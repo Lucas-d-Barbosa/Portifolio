@@ -84,6 +84,15 @@ export default function Header() {
               Experiência Profissional
             </a>
           </li>
+          <li>
+            <a
+              href="#projetos"
+              aria-label="Link para a experiência profissional"
+              onClick={handleClickLink}
+            >
+              Meus Projetos
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
