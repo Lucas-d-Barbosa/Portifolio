@@ -21,40 +21,43 @@ export default function SoftSkills() {
   return (
     <Section title="Soft Skills" id="soft-skills">
       <Skill nome="Comunicação">
-        <FaComments />
+        <FaComments aria-label="Comunicação" title="Comunicação" />
       </Skill>
       <Skill nome="Trabalho em Equipe">
-        <FaUsers />
+        <FaUsers aria-label="Trabalho em Equipe" title="Trabalho em Equipe" />
       </Skill>
       <Skill nome="Proatividade">
-        <MdOutlineLightbulb />
+        <MdOutlineLightbulb aria-label="Proatividade" title="Proatividade" />
       </Skill>
       <Skill nome="Resiliência">
-        <GiMountainClimbing />
+        <GiMountainClimbing aria-label="Resiliência" title="Resiliência" />
       </Skill>
       <Skill nome="Organização">
-        <FaRegCalendarCheck />
+        <FaRegCalendarCheck aria-label="Organização" title="Organização" />
       </Skill>
       <Skill nome="Empatia">
-        <GiHeartInside />
+        <GiHeartInside aria-label="Empatia" title="Empatia" />
       </Skill>
       <Skill nome="Pensamento Crítico">
-        <FaBrain />
+        <FaBrain aria-label="Pensamento Crítico" title="Pensamento Crítico" />
       </Skill>
       <Skill nome="Gestão de Tempo">
-        <BsClockHistory />
+        <BsClockHistory aria-label="Gestão de Tempo" title="Gestão de Tempo" />
       </Skill>
       <Skill nome="Adaptabilidade">
-        <GiPuzzle />
+        <GiPuzzle aria-label="Adaptabilidade" title="Adaptabilidade" />
       </Skill>
       <Skill nome="Escuta Ativa">
-        <IoEarOutline />
+        <IoEarOutline aria-label="Escuta Ativa" title="Escuta Ativa" />
       </Skill>
       <Skill nome="Ética Profissional">
-        <RiShieldCheckLine />
+        <RiShieldCheckLine
+          aria-label="Ética Profissional"
+          title="Ética Profissional"
+        />
       </Skill>
       <Skill nome="Liderança">
-        <GiLaurelsTrophy />
+        <GiLaurelsTrophy aria-label="Liderança" title="Liderança" />
       </Skill>
     </Section>
   );

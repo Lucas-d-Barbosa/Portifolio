@@ -18,40 +18,40 @@ export default function HardSkills() {
   return (
     <Section title="Hard Skills" id="hard-skills">
       <Skill nome="HTML">
-        <FaHtml5 />
+        <FaHtml5 aria-label="HTML" title="HTML" />
       </Skill>
       <Skill nome="CSS">
-        <FaCss3Alt />
+        <FaCss3Alt aria-label="CSS" title="CSS" />
       </Skill>
       <Skill nome="JavaScript">
-        <IoLogoJavascript />
+        <IoLogoJavascript aria-label="JavaScript" title="JavaScript" />
       </Skill>
       <Skill nome="TypeScript">
-        <SiTypescript />
+        <SiTypescript aria-label="TypeScript" title="TypeScript" />
       </Skill>
       <Skill nome="Angular">
-        <FaAngular />
+        <FaAngular aria-label="Angular" title="Angular" />
       </Skill>
       <Skill nome="React">
-        <FaReact />
+        <FaReact aria-label="React" title="React" />
       </Skill>
       <Skill nome="Vue">
-        <FaVuejs />
+        <FaVuejs aria-label="Vue.js" title="Vue.js" />
       </Skill>
       <Skill nome="PHP">
-        <DiPhp />
+        <DiPhp aria-label="PHP" title="PHP" />
       </Skill>
       <Skill nome="Laravel">
-        <FaLaravel />
+        <FaLaravel aria-label="Laravel" title="Laravel" />
       </Skill>
       <Skill nome="Java">
-        <FaJava />
+        <FaJava aria-label="Java" title="Java" />
       </Skill>
       <Skill nome="Spring Boot">
-        <BiLogoSpringBoot />
+        <BiLogoSpringBoot aria-label="Spring Boot" title="Spring Boot" />
       </Skill>
       <Skill nome="MySQL">
-        <SiMysql />
+        <SiMysql aria-label="MySQL" title="MySQL" />
       </Skill>
     </Section>
   );
