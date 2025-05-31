@@ -12,6 +12,7 @@
   cursor: pointer;
   transition: 0.3s ease-in-out;
   box-shadow: 2rem 2rem 3rem #0000004f;
+  border: 2px solid #ffffff31;
   position: relative;
 }
 
